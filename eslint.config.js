@@ -7,6 +7,17 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default [
   { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
+  {
+    ignores: [
+      './node_modules',
+      './dist',
+      './.nuxt',
+      './.data',
+      './nitro',
+      './.cache',
+      './.output'
+    ]
+  },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
