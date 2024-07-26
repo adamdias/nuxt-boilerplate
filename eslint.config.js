@@ -9,13 +9,13 @@ export default [
   { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
   {
     ignores: [
-      './node_modules',
-      './dist',
-      './.nuxt',
-      './.data',
-      './nitro',
-      './.cache',
-      './.output'
+      'node_modules',
+      'dist',
+      '.nuxt',
+      '.data',
+      '.nitro',
+      '.cache',
+      '.output'
     ]
   },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
